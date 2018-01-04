@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9137B7981F373DE800CDF59A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9137B7971F373DE800CDF59A /* main.cpp */; };
+		9137B8431F3B576300CDF59A /* STdsApplicationOfMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9137B8421F3B576300CDF59A /* STdsApplicationOfMac.mm */; };
+		9137B8451F3B5E2600CDF59A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9137B8441F3B5E2600CDF59A /* Cocoa.framework */; };
+		9137B8471F3B5E4100CDF59A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9137B8461F3B5E4100CDF59A /* Carbon.framework */; };
+		9137B8491F3B5E4700CDF59A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9137B8481F3B5E4700CDF59A /* AppKit.framework */; };
+		9151A33F1F4B4437004E9E95 /* libSTcc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A33E1F4B4437004E9E95 /* libSTcc.a */; };
+		9151A3591F4DD05B004E9E95 /* STdsApplicationOfMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9137B8421F3B576300CDF59A /* STdsApplicationOfMac.mm */; };
+		9151A3BE1F54502C004E9E95 /* STdsTime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3BD1F54502C004E9E95 /* STdsTime.mm */; };
+		9151A3BF1F54502C004E9E95 /* STdsTime.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3BD1F54502C004E9E95 /* STdsTime.mm */; };
+		9151A3C31F545A16004E9E95 /* STdsApplication.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9151A3C21F545A16004E9E95 /* STdsApplication.hpp */; };
+		9151A3C51F5687C9004E9E95 /* STdsWindowOfMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3C41F5687C9004E9E95 /* STdsWindowOfMac.mm */; };
+		9151A3C61F5687C9004E9E95 /* STdsWindowOfMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3C41F5687C9004E9E95 /* STdsWindowOfMac.mm */; };
+		9151A3C81F569971004E9E95 /* STdsKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3C71F569971004E9E95 /* STdsKeyboard.cpp */; };
+		9151A3C91F569971004E9E95 /* STdsKeyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3C71F569971004E9E95 /* STdsKeyboard.cpp */; };
+		9151A3CE1F56ABC2004E9E95 /* STdsApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3CA1F569FF7004E9E95 /* STdsApplication.cpp */; };
+		9151A3D01F56B3CC004E9E95 /* STdsMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3CF1F56B3CC004E9E95 /* STdsMouse.cpp */; };
+		9151A3D11F56B3CC004E9E95 /* STdsMouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3CF1F56B3CC004E9E95 /* STdsMouse.cpp */; };
+		9151A3E01F5722F8004E9E95 /* STdsWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3DF1F5722F8004E9E95 /* STdsWindow.cpp */; };
+		9151A3E11F5722F8004E9E95 /* STdsWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3DF1F5722F8004E9E95 /* STdsWindow.cpp */; };
+		9151A3E81F585A47004E9E95 /* STdsApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3CA1F569FF7004E9E95 /* STdsApplication.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9137B7921F373DE800CDF59A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9137B70F1F35E13C00CDF59A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../DeskSwitch/README.md; sourceTree = "<group>"; };
+		9137B7941F373DE800CDF59A /* STDeskSwitch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STDeskSwitch; sourceTree = BUILT_PRODUCTS_DIR; };
+		9137B7971F373DE800CDF59A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9137B7FE1F39FFDA00CDF59A /* libSTcc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTcc.a; path = "../../../../../../Users/cc/Library/Developer/Xcode/DerivedData/ST-dvyjwkbeqezpgsaoczmfbpnhtfwl/Build/Products/Debug/libSTcc.a"; sourceTree = "<group>"; };
+		9137B82B1F3B52A500CDF59A /* STdsMacro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = STdsMacro.hpp; path = ../../DeskSwitch/include/STdsMacro.hpp; sourceTree = "<group>"; };
+		9137B82C1F3B52A500CDF59A /* STdsWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = STdsWindow.hpp; path = ../../DeskSwitch/include/STdsWindow.hpp; sourceTree = "<group>"; };
+		9137B8361F3B532300CDF59A /* STdsMouse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = STdsMouse.hpp; path = ../../DeskSwitch/include/STdsMouse.hpp; sourceTree = "<group>"; };
+		9137B8421F3B576300CDF59A /* STdsApplicationOfMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = STdsApplicationOfMac.mm; path = ../../DeskSwitch/src/mac/STdsApplicationOfMac.mm; sourceTree = "<group>"; };
+		9137B8441F3B5E2600CDF59A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9137B8461F3B5E4100CDF59A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		9137B8481F3B5E4700CDF59A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9137B8B01F4956A500CDF59A /* STdsKeyboard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = STdsKeyboard.hpp; path = ../../DeskSwitch/include/STdsKeyboard.hpp; sourceTree = "<group>"; };
+		9151A33E1F4B4437004E9E95 /* libSTcc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTcc.a; path = "../../../../../../Users/cc/Library/Developer/Xcode/DerivedData/ST-cjrknzibcugoiyccmuqpgweerxxt/Build/Products/Debug/libSTcc.a"; sourceTree = "<group>"; };
+		9151A3541F4DCF48004E9E95 /* libSTds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTds.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9151A3BC1F544F86004E9E95 /* STdsTime.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = STdsTime.hpp; path = ../../DeskSwitch/include/STdsTime.hpp; sourceTree = "<group>"; };
+		9151A3BD1F54502C004E9E95 /* STdsTime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = STdsTime.mm; path = ../../DeskSwitch/src/mac/STdsTime.mm; sourceTree = "<group>"; };
+		9151A3C21F545A16004E9E95 /* STdsApplication.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = STdsApplication.hpp; path = ../../DeskSwitch/include/STdsApplication.hpp; sourceTree = "<group>"; };
+		9151A3C41F5687C9004E9E95 /* STdsWindowOfMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = STdsWindowOfMac.mm; path = ../../DeskSwitch/src/mac/STdsWindowOfMac.mm; sourceTree = "<group>"; };
+		9151A3C71F569971004E9E95 /* STdsKeyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STdsKeyboard.cpp; path = ../../DeskSwitch/src/STdsKeyboard.cpp; sourceTree = "<group>"; };
+		9151A3CA1F569FF7004E9E95 /* STdsApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STdsApplication.cpp; path = ../../DeskSwitch/src/STdsApplication.cpp; sourceTree = "<group>"; };
+		9151A3CD1F56A1C3004E9E95 /* STdsConst.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = STdsConst.hpp; path = ../../DeskSwitch/include/STdsConst.hpp; sourceTree = "<group>"; };
+		9151A3CF1F56B3CC004E9E95 /* STdsMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STdsMouse.cpp; path = ../../DeskSwitch/src/STdsMouse.cpp; sourceTree = "<group>"; };
+		9151A3DF1F5722F8004E9E95 /* STdsWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STdsWindow.cpp; path = ../../DeskSwitch/src/STdsWindow.cpp; sourceTree = "<group>"; };
+		9151A3E61F5859BD004E9E95 /* STdsPlatformOfMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STdsPlatformOfMac.h; sourceTree = "<group>"; };
+		9151A3E71F5859CA004E9E95 /* STdsPlatformFeature.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = STdsPlatformFeature.hpp; path = ../../DeskSwitch/include/STdsPlatformFeature.hpp; sourceTree = "<group>"; };
+		9151A3EE1F586F88004E9E95 /* STdsPlatformCheck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = STdsPlatformCheck.hpp; path = ../../DeskSwitch/include/STdsPlatformCheck.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9137B7911F373DE800CDF59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A33F1F4B4437004E9E95 /* libSTcc.a in Frameworks */,
+				9137B8491F3B5E4700CDF59A /* AppKit.framework in Frameworks */,
+				9137B8471F3B5E4100CDF59A /* Carbon.framework in Frameworks */,
+				9137B8451F3B5E2600CDF59A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9151A3511F4DCF48004E9E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9137B70E1F35E12E00CDF59A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9137B8411F3B572200CDF59A /* mac */,
+				9151A3C71F569971004E9E95 /* STdsKeyboard.cpp */,
+				9151A3CA1F569FF7004E9E95 /* STdsApplication.cpp */,
+				9151A3CF1F56B3CC004E9E95 /* STdsMouse.cpp */,
+				9151A3DF1F5722F8004E9E95 /* STdsWindow.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		9137B7951F373DE800CDF59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9137B7941F373DE800CDF59A /* STDeskSwitch */,
+				9151A3541F4DCF48004E9E95 /* libSTds.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9137B7961F373DE800CDF59A /* STDeskSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				9137B7971F373DE800CDF59A /* main.cpp */,
+			);
+			path = STDeskSwitch;
+			sourceTree = "<group>";
+		};
+		9137B7B01F39F24700CDF59A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9151A33E1F4B4437004E9E95 /* libSTcc.a */,
+				9137B8481F3B5E4700CDF59A /* AppKit.framework */,
+				9137B8461F3B5E4100CDF59A /* Carbon.framework */,
+				9137B8441F3B5E2600CDF59A /* Cocoa.framework */,
+				9137B7FE1F39FFDA00CDF59A /* libSTcc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9137B82A1F3B526200CDF59A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3E51F5859BD004E9E95 /* mac */,
+				9151A3C21F545A16004E9E95 /* STdsApplication.hpp */,
+				9151A3CD1F56A1C3004E9E95 /* STdsConst.hpp */,
+				9137B82B1F3B52A500CDF59A /* STdsMacro.hpp */,
+				9137B8B01F4956A500CDF59A /* STdsKeyboard.hpp */,
+				9137B8361F3B532300CDF59A /* STdsMouse.hpp */,
+				9151A3E71F5859CA004E9E95 /* STdsPlatformFeature.hpp */,
+				9151A3BC1F544F86004E9E95 /* STdsTime.hpp */,
+				9137B82C1F3B52A500CDF59A /* STdsWindow.hpp */,
+				9151A3EE1F586F88004E9E95 /* STdsPlatformCheck.hpp */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		9137B8411F3B572200CDF59A /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				9137B8421F3B576300CDF59A /* STdsApplicationOfMac.mm */,
+				9151A3BD1F54502C004E9E95 /* STdsTime.mm */,
+				9151A3C41F5687C9004E9E95 /* STdsWindowOfMac.mm */,
+			);
+			name = mac;
+			sourceTree = "<group>";
+		};
+		9151A3E51F5859BD004E9E95 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3E61F5859BD004E9E95 /* STdsPlatformOfMac.h */,
+			);
+			name = mac;
+			path = ../../DeskSwitch/include/mac;
+			sourceTree = "<group>";
+		};
+		91C3BD811F35C5B500307296 = {
+			isa = PBXGroup;
+			children = (
+				9137B70F1F35E13C00CDF59A /* README.md */,
+				9137B7B01F39F24700CDF59A /* Frameworks */,
+				9137B82A1F3B526200CDF59A /* include */,
+				9137B7951F373DE800CDF59A /* Products */,
+				9137B70E1F35E12E00CDF59A /* src */,
+				9137B7961F373DE800CDF59A /* STDeskSwitch */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9151A3521F4DCF48004E9E95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A3C31F545A16004E9E95 /* STdsApplication.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9137B7931F373DE800CDF59A /* STDeskSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9137B79B1F373DE800CDF59A /* Build configuration list for PBXNativeTarget "STDeskSwitch" */;
+			buildPhases = (
+				9137B7901F373DE800CDF59A /* Sources */,
+				9137B7911F373DE800CDF59A /* Frameworks */,
+				9137B7921F373DE800CDF59A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STDeskSwitch;
+			productName = STDeskSwitch;
+			productReference = 9137B7941F373DE800CDF59A /* STDeskSwitch */;
+			productType = "com.apple.product-type.tool";
+		};
+		9151A3531F4DCF48004E9E95 /* STds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9151A3551F4DCF48004E9E95 /* Build configuration list for PBXNativeTarget "STds" */;
+			buildPhases = (
+				9151A3501F4DCF48004E9E95 /* Sources */,
+				9151A3511F4DCF48004E9E95 /* Frameworks */,
+				9151A3521F4DCF48004E9E95 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STds;
+			productName = DeskSwitch;
+			productReference = 9151A3541F4DCF48004E9E95 /* libSTds.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91C3BD821F35C5B500307296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ST Studio";
+				TargetAttributes = {
+					9137B7931F373DE800CDF59A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G6KZR835DK;
+						ProvisioningStyle = Automatic;
+					};
+					9151A3531F4DCF48004E9E95 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G6KZR835DK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91C3BD851F35C5B500307296 /* Build configuration list for PBXProject "STDeskSwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91C3BD811F35C5B500307296;
+			productRefGroup = 9137B7951F373DE800CDF59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9137B7931F373DE800CDF59A /* STDeskSwitch */,
+				9151A3531F4DCF48004E9E95 /* STds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9137B7901F373DE800CDF59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A3CE1F56ABC2004E9E95 /* STdsApplication.cpp in Sources */,
+				9137B8431F3B576300CDF59A /* STdsApplicationOfMac.mm in Sources */,
+				9151A3C81F569971004E9E95 /* STdsKeyboard.cpp in Sources */,
+				9151A3BE1F54502C004E9E95 /* STdsTime.mm in Sources */,
+				9151A3E01F5722F8004E9E95 /* STdsWindow.cpp in Sources */,
+				9137B7981F373DE800CDF59A /* main.cpp in Sources */,
+				9151A3D01F56B3CC004E9E95 /* STdsMouse.cpp in Sources */,
+				9151A3C51F5687C9004E9E95 /* STdsWindowOfMac.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9151A3501F4DCF48004E9E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A3E81F585A47004E9E95 /* STdsApplication.cpp in Sources */,
+				9151A3BF1F54502C004E9E95 /* STdsTime.mm in Sources */,
+				9151A3C91F569971004E9E95 /* STdsKeyboard.cpp in Sources */,
+				9151A3E11F5722F8004E9E95 /* STdsWindow.cpp in Sources */,
+				9151A3D11F56B3CC004E9E95 /* STdsMouse.cpp in Sources */,
+				9151A3591F4DD05B004E9E95 /* STdsApplicationOfMac.mm in Sources */,
+				9151A3C61F5687C9004E9E95 /* STdsWindowOfMac.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9137B7991F373DE800CDF59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${CodeRoot}/include ${CodeRoot}/src/**";
+			};
+			name = Debug;
+		};
+		9137B79A1F373DE800CDF59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${CodeRoot}/include ${CodeRoot}/src/**";
+			};
+			name = Release;
+		};
+		9151A3561F4DCF48004E9E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${CodeRoot}/include";
+				USE_HEADERMAP = YES;
+			};
+			name = Debug;
+		};
+		9151A3571F4DCF48004E9E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${CodeRoot}/include";
+				USE_HEADERMAP = YES;
+			};
+			name = Release;
+		};
+		91C3BD861F35C5B500307296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		91C3BD871F35C5B500307296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9137B79B1F373DE800CDF59A /* Build configuration list for PBXNativeTarget "STDeskSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9137B7991F373DE800CDF59A /* Debug */,
+				9137B79A1F373DE800CDF59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9151A3551F4DCF48004E9E95 /* Build configuration list for PBXNativeTarget "STds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9151A3561F4DCF48004E9E95 /* Debug */,
+				9151A3571F4DCF48004E9E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C3BD851F35C5B500307296 /* Build configuration list for PBXProject "STDeskSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C3BD861F35C5B500307296 /* Debug */,
+				91C3BD871F35C5B500307296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C3BD821F35C5B500307296 /* Project object */;
+}

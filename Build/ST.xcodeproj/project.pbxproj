@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		9137B7EE1F39FED100CDF59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C3BD881F35C5B500307296 /* STDeskSwitch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9137B7941F373DE800CDF59A;
+			remoteInfo = STDeskSwitch;
+		};
+		9137B7F01F39FED100CDF59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91C3BD881F35C5B500307296 /* STDeskSwitch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9137B7BE1F39F33200CDF59A;
+			remoteInfo = STDeckSwitchTest;
+		};
+		9137B7F81F39FF1900CDF59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9137B74A1F35EFD400CDF59A;
+			remoteInfo = STCommenCode;
+		};
+		9137B7FA1F39FF1900CDF59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9137B7A01F373F0C00CDF59A;
+			remoteInfo = LibSTcc;
+		};
+		9137B7FC1F39FF1900CDF59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9137B7EB1F39FEC800CDF59A;
+			remoteInfo = "LibSTcc copy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STCommenCode.xcodeproj; path = STCommenCode/STCommenCode.xcodeproj; sourceTree = "<group>"; };
+		91C3BD7E1F35C59E00307296 /* STGameEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STGameEngine.xcodeproj; path = STGameEngine/STGameEngine.xcodeproj; sourceTree = "<group>"; };
+		91C3BD881F35C5B500307296 /* STDeskSwitch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STDeskSwitch.xcodeproj; path = STDeskSwitch/STDeskSwitch.xcodeproj; sourceTree = "<group>"; };
+		91C3BD921F35C5D300307296 /* STGameTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STGameTest.xcodeproj; path = STGameTest/STGameTest.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9137B7F31F39FF1900CDF59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9137B7F91F39FF1900CDF59A /* STCommenCode */,
+				9137B7FB1F39FF1900CDF59A /* libLibSTcc.a */,
+				9137B7FD1F39FF1900CDF59A /* libLibSTcc copy.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C3BD701F35C52400307296 = {
+			isa = PBXGroup;
+			children = (
+				9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */,
+				91C3BD7E1F35C59E00307296 /* STGameEngine.xcodeproj */,
+				91C3BD881F35C5B500307296 /* STDeskSwitch.xcodeproj */,
+				91C3BD921F35C5D300307296 /* STGameTest.xcodeproj */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+		91C3BD7F1F35C59E00307296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C3BD891F35C5B500307296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9137B7EF1F39FED100CDF59A /* STDeskSwitch */,
+				9137B7F11F39FED100CDF59A /* STDeckSwitchTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C3BD931F35C5D300307296 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		91C3BD711F35C52400307296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ST Studio";
+			};
+			buildConfigurationList = 91C3BD741F35C52400307296 /* Build configuration list for PBXProject "ST" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91C3BD701F35C52400307296;
+			productRefGroup = 91C3BD701F35C52400307296;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9137B7F31F39FF1900CDF59A /* Products */;
+					ProjectRef = 9137B7F21F39FF1900CDF59A /* STCommenCode.xcodeproj */;
+				},
+				{
+					ProductGroup = 91C3BD891F35C5B500307296 /* Products */;
+					ProjectRef = 91C3BD881F35C5B500307296 /* STDeskSwitch.xcodeproj */;
+				},
+				{
+					ProductGroup = 91C3BD7F1F35C59E00307296 /* Products */;
+					ProjectRef = 91C3BD7E1F35C59E00307296 /* STGameEngine.xcodeproj */;
+				},
+				{
+					ProductGroup = 91C3BD931F35C5D300307296 /* Products */;
+					ProjectRef = 91C3BD921F35C5D300307296 /* STGameTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9137B7EF1F39FED100CDF59A /* STDeskSwitch */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = STDeskSwitch;
+			remoteRef = 9137B7EE1F39FED100CDF59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9137B7F11F39FED100CDF59A /* STDeckSwitchTest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = STDeckSwitchTest;
+			remoteRef = 9137B7F01F39FED100CDF59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9137B7F91F39FF1900CDF59A /* STCommenCode */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = STCommenCode;
+			remoteRef = 9137B7F81F39FF1900CDF59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9137B7FB1F39FF1900CDF59A /* libLibSTcc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLibSTcc.a;
+			remoteRef = 9137B7FA1F39FF1900CDF59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9137B7FD1F39FF1900CDF59A /* libLibSTcc copy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libLibSTcc copy.a";
+			remoteRef = 9137B7FC1F39FF1900CDF59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin XCBuildConfiguration section */
+		91C3BD751F35C52400307296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		91C3BD761F35C52400307296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91C3BD741F35C52400307296 /* Build configuration list for PBXProject "ST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C3BD751F35C52400307296 /* Debug */,
+				91C3BD761F35C52400307296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C3BD711F35C52400307296 /* Project object */;
+}

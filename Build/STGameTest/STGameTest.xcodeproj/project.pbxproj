@@ -1,0 +1,93 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9137B7121F35E17D00CDF59A /* LWApplicationContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LWApplicationContext.cpp; path = ../../GameTest/src/LWApplicationContext.cpp; sourceTree = "<group>"; };
+		9137B7131F35E17D00CDF59A /* LWApplicationContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LWApplicationContext.h; path = ../../GameTest/src/LWApplicationContext.h; sourceTree = "<group>"; };
+		9137B7141F35E17D00CDF59A /* LWConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LWConfig.h; path = ../../GameTest/src/LWConfig.h; sourceTree = "<group>"; };
+		9137B7151F35E17D00CDF59A /* LWMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LWMarco.h; path = ../../GameTest/src/LWMarco.h; sourceTree = "<group>"; };
+		9137B7161F35E17D00CDF59A /* mac */ = {isa = PBXFileReference; lastKnownFileType = folder; name = mac; path = ../../GameTest/src/mac; sourceTree = "<group>"; };
+		9137B7171F35E17D00CDF59A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../GameTest/src/main.cpp; sourceTree = "<group>"; };
+		9137B7181F35E18400CDF59A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../GameTest/README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9137B7111F35E16F00CDF59A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9137B7121F35E17D00CDF59A /* LWApplicationContext.cpp */,
+				9137B7131F35E17D00CDF59A /* LWApplicationContext.h */,
+				9137B7141F35E17D00CDF59A /* LWConfig.h */,
+				9137B7151F35E17D00CDF59A /* LWMarco.h */,
+				9137B7161F35E17D00CDF59A /* mac */,
+				9137B7171F35E17D00CDF59A /* main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		91C3BD8B1F35C5D300307296 = {
+			isa = PBXGroup;
+			children = (
+				9137B7181F35E18400CDF59A /* README.md */,
+				9137B7111F35E16F00CDF59A /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		91C3BD8C1F35C5D300307296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ST Studio";
+			};
+			buildConfigurationList = 91C3BD8F1F35C5D300307296 /* Build configuration list for PBXProject "STGameTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91C3BD8B1F35C5D300307296;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		91C3BD901F35C5D300307296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		91C3BD911F35C5D300307296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91C3BD8F1F35C5D300307296 /* Build configuration list for PBXProject "STGameTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C3BD901F35C5D300307296 /* Debug */,
+				91C3BD911F35C5D300307296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C3BD8C1F35C5D300307296 /* Project object */;
+}

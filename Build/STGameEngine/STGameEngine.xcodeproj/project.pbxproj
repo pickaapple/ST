@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9151A3B71F544509004E9E95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3B61F544509004E9E95 /* main.cpp */; };
+		9151A3D51F570813004E9E95 /* STgeGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A3D41F570813004E9E95 /* STgeGame.cpp */; };
+		9151A3D91F5708D2004E9E95 /* libSTcc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A3D71F5708D2004E9E95 /* libSTcc.a */; };
+		9151A3EA1F5869C9004E9E95 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A3E91F5869C9004E9E95 /* AppKit.framework */; };
+		9151A3EB1F586A2A004E9E95 /* libSTds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9151A3D81F5708D2004E9E95 /* libSTds.a */; };
+		9151A4B61F5DA6CD004E9E95 /* STgeApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A4B41F5DA6CD004E9E95 /* STgeApplication.cpp */; };
+		9151A4B91F5DA6EB004E9E95 /* STgeWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9151A4B71F5DA6EB004E9E95 /* STgeWindow.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9151A3B11F544509004E9E95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9137B7101F35E15600CDF59A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../GameEngine/README.md; sourceTree = "<group>"; };
+		9151A35D1F4DD5EA004E9E95 /* ST2DViewMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ST2DViewMacros.h; sourceTree = "<group>"; };
+		9151A35E1F4DD5EA004E9E95 /* STCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STCanvas.cpp; sourceTree = "<group>"; };
+		9151A35F1F4DD5EA004E9E95 /* STCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STCanvas.h; sourceTree = "<group>"; };
+		9151A3601F4DD5EA004E9E95 /* STCanvasContainer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STCanvasContainer.cpp; sourceTree = "<group>"; };
+		9151A3611F4DD5EA004E9E95 /* STCanvasContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STCanvasContainer.h; sourceTree = "<group>"; };
+		9151A3621F4DD5EA004E9E95 /* STColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STColor.cpp; sourceTree = "<group>"; };
+		9151A3631F4DD5EA004E9E95 /* STColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STColor.h; sourceTree = "<group>"; };
+		9151A3641F4DD5EA004E9E95 /* STCoordinateAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STCoordinateAxis.cpp; sourceTree = "<group>"; };
+		9151A3651F4DD5EA004E9E95 /* STCoordinateAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STCoordinateAxis.h; sourceTree = "<group>"; };
+		9151A3661F4DD5EA004E9E95 /* STGroupView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STGroupView.cpp; sourceTree = "<group>"; };
+		9151A3671F4DD5EA004E9E95 /* STGroupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STGroupView.h; sourceTree = "<group>"; };
+		9151A3681F4DD5EA004E9E95 /* STPrimitiveData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STPrimitiveData.cpp; sourceTree = "<group>"; };
+		9151A3691F4DD5EA004E9E95 /* STPrimitiveData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPrimitiveData.h; sourceTree = "<group>"; };
+		9151A36A1F4DD5EA004E9E95 /* STView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STView.cpp; sourceTree = "<group>"; };
+		9151A36B1F4DD5EA004E9E95 /* STView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STView.h; sourceTree = "<group>"; };
+		9151A36F1F4DD5EA004E9E95 /* STConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STConfig.h; sourceTree = "<group>"; };
+		9151A3741F4DD5EA004E9E95 /* STTimeController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = STTimeController.cpp; sourceTree = "<group>"; };
+		9151A3751F4DD5EA004E9E95 /* STTimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTimeController.h; sourceTree = "<group>"; };
+		9151A3921F4DD625004E9E95 /* STgeGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = STgeGame.hpp; sourceTree = "<group>"; };
+		9151A3B31F544509004E9E95 /* STGameEngine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = STGameEngine; sourceTree = BUILT_PRODUCTS_DIR; };
+		9151A3B61F544509004E9E95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9151A3D31F570439004E9E95 /* STgeMacro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STgeMacro.hpp; sourceTree = "<group>"; };
+		9151A3D41F570813004E9E95 /* STgeGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = STgeGame.cpp; path = ../../GameEngine/src/STgeGame.cpp; sourceTree = "<group>"; };
+		9151A3D71F5708D2004E9E95 /* libSTcc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTcc.a; path = "../../../../../../Users/cc/Library/Developer/Xcode/DerivedData/ST-cjrknzibcugoiyccmuqpgweerxxt/Build/Products/Debug/libSTcc.a"; sourceTree = "<group>"; };
+		9151A3D81F5708D2004E9E95 /* libSTds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSTds.a; path = "../../../../../../Users/cc/Library/Developer/Xcode/DerivedData/ST-cjrknzibcugoiyccmuqpgweerxxt/Build/Products/Debug/libSTds.a"; sourceTree = "<group>"; };
+		9151A3E91F5869C9004E9E95 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9151A4B41F5DA6CD004E9E95 /* STgeApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STgeApplication.cpp; sourceTree = "<group>"; };
+		9151A4B51F5DA6CD004E9E95 /* STgeApplication.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STgeApplication.hpp; sourceTree = "<group>"; };
+		9151A4B71F5DA6EB004E9E95 /* STgeWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = STgeWindow.cpp; sourceTree = "<group>"; };
+		9151A4B81F5DA6EB004E9E95 /* STgeWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = STgeWindow.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9151A3B01F544509004E9E95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A3EA1F5869C9004E9E95 /* AppKit.framework in Frameworks */,
+				9151A3EB1F586A2A004E9E95 /* libSTds.a in Frameworks */,
+				9151A3D91F5708D2004E9E95 /* libSTcc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9151A35B1F4DD5EA004E9E95 /* 2dview */ = {
+			isa = PBXGroup;
+			children = (
+				9151A35D1F4DD5EA004E9E95 /* ST2DViewMacros.h */,
+				9151A35E1F4DD5EA004E9E95 /* STCanvas.cpp */,
+				9151A35F1F4DD5EA004E9E95 /* STCanvas.h */,
+				9151A3601F4DD5EA004E9E95 /* STCanvasContainer.cpp */,
+				9151A3611F4DD5EA004E9E95 /* STCanvasContainer.h */,
+				9151A3621F4DD5EA004E9E95 /* STColor.cpp */,
+				9151A3631F4DD5EA004E9E95 /* STColor.h */,
+				9151A3641F4DD5EA004E9E95 /* STCoordinateAxis.cpp */,
+				9151A3651F4DD5EA004E9E95 /* STCoordinateAxis.h */,
+				9151A3661F4DD5EA004E9E95 /* STGroupView.cpp */,
+				9151A3671F4DD5EA004E9E95 /* STGroupView.h */,
+				9151A3681F4DD5EA004E9E95 /* STPrimitiveData.cpp */,
+				9151A3691F4DD5EA004E9E95 /* STPrimitiveData.h */,
+				9151A36A1F4DD5EA004E9E95 /* STView.cpp */,
+				9151A36B1F4DD5EA004E9E95 /* STView.h */,
+			);
+			name = 2dview;
+			path = ../../GameEngine/src/2dview;
+			sourceTree = "<group>";
+		};
+		9151A36C1F4DD5EA004E9E95 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				9151A36F1F4DD5EA004E9E95 /* STConfig.h */,
+				9151A3741F4DD5EA004E9E95 /* STTimeController.cpp */,
+				9151A3751F4DD5EA004E9E95 /* STTimeController.h */,
+			);
+			name = base;
+			path = ../../GameEngine/src/base;
+			sourceTree = "<group>";
+		};
+		9151A3911F4DD625004E9E95 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3D31F570439004E9E95 /* STgeMacro.hpp */,
+				9151A3921F4DD625004E9E95 /* STgeGame.hpp */,
+			);
+			name = include;
+			path = ../../GameEngine/include;
+			sourceTree = "<group>";
+		};
+		9151A3B41F544509004E9E95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3B31F544509004E9E95 /* STGameEngine */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9151A3B51F544509004E9E95 /* STGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3B61F544509004E9E95 /* main.cpp */,
+			);
+			path = STGameEngine;
+			sourceTree = "<group>";
+		};
+		9151A3D61F5708D2004E9E95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9151A3E91F5869C9004E9E95 /* AppKit.framework */,
+				9151A3D71F5708D2004E9E95 /* libSTcc.a */,
+				9151A3D81F5708D2004E9E95 /* libSTds.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9151A4B31F5DA6CD004E9E95 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				9151A4B41F5DA6CD004E9E95 /* STgeApplication.cpp */,
+				9151A4B51F5DA6CD004E9E95 /* STgeApplication.hpp */,
+				9151A4B71F5DA6EB004E9E95 /* STgeWindow.cpp */,
+				9151A4B81F5DA6EB004E9E95 /* STgeWindow.hpp */,
+			);
+			name = application;
+			path = ../../GameEngine/src/application;
+			sourceTree = "<group>";
+		};
+		91C3BD771F35C59E00307296 = {
+			isa = PBXGroup;
+			children = (
+				9137B7101F35E15600CDF59A /* README.md */,
+				9151A3911F4DD625004E9E95 /* include */,
+				91C3BD951F35C60000307296 /* src */,
+				9151A3B51F544509004E9E95 /* STGameEngine */,
+				9151A3B41F544509004E9E95 /* Products */,
+				9151A3D61F5708D2004E9E95 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91C3BD951F35C60000307296 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9151A4B31F5DA6CD004E9E95 /* application */,
+				9151A35B1F4DD5EA004E9E95 /* 2dview */,
+				9151A36C1F4DD5EA004E9E95 /* base */,
+				9151A3D41F570813004E9E95 /* STgeGame.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9151A3B21F544509004E9E95 /* STGameEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9151A3BA1F544509004E9E95 /* Build configuration list for PBXNativeTarget "STGameEngine" */;
+			buildPhases = (
+				9151A3AF1F544509004E9E95 /* Sources */,
+				9151A3B01F544509004E9E95 /* Frameworks */,
+				9151A3B11F544509004E9E95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STGameEngine;
+			productName = STGameEngine;
+			productReference = 9151A3B31F544509004E9E95 /* STGameEngine */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91C3BD781F35C59E00307296 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ST Studio";
+				TargetAttributes = {
+					9151A3B21F544509004E9E95 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = G6KZR835DK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 91C3BD7B1F35C59E00307296 /* Build configuration list for PBXProject "STGameEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91C3BD771F35C59E00307296;
+			productRefGroup = 9151A3B41F544509004E9E95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9151A3B21F544509004E9E95 /* STGameEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9151A3AF1F544509004E9E95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9151A3D51F570813004E9E95 /* STgeGame.cpp in Sources */,
+				9151A4B61F5DA6CD004E9E95 /* STgeApplication.cpp in Sources */,
+				9151A4B91F5DA6EB004E9E95 /* STgeWindow.cpp in Sources */,
+				9151A3B71F544509004E9E95 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9151A3B81F544509004E9E95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../GameEngine";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				LibSTdsRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${LibSTdsRoot}/include ${CodeRoot}/include ${CodeRoot}/src";
+			};
+			name = Debug;
+		};
+		9151A3B91F544509004E9E95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CodeRoot = "${PROJECT_DIR}/../../GameEngine";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G6KZR835DK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LibSTccRoot = "${PROJECT_DIR}/../../CommenCode";
+				LibSTdsRoot = "${PROJECT_DIR}/../../DeskSwitch";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				USER_HEADER_SEARCH_PATHS = "${LibSTccRoot}/include ${LibSTdsRoot}/include ${CodeRoot}/include ${CodeRoot}/src";
+			};
+			name = Release;
+		};
+		91C3BD7C1F35C59E00307296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		91C3BD7D1F35C59E00307296 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9151A3BA1F544509004E9E95 /* Build configuration list for PBXNativeTarget "STGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9151A3B81F544509004E9E95 /* Debug */,
+				9151A3B91F544509004E9E95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C3BD7B1F35C59E00307296 /* Build configuration list for PBXProject "STGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C3BD7C1F35C59E00307296 /* Debug */,
+				91C3BD7D1F35C59E00307296 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C3BD781F35C59E00307296 /* Project object */;
+}
