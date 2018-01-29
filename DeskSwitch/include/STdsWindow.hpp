@@ -111,7 +111,7 @@ public:
     //Window Event
 public:
     OnKeyboardEvent  _hKeyBordEvent;
-    OnMouseEvent     _hMouseBordEvent;
+    OnMouseEvent     _hMouseEvent;
     
     ////////////////////////////////////////
     //Window Contructor

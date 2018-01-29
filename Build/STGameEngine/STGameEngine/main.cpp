@@ -10,6 +10,7 @@
 
 int main(int argc, const char * argv[])
 {
+    NS_STGE Application app;
     NS_STGE Game game;
     game.Run();
     return 0;

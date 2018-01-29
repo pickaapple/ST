@@ -8,6 +8,7 @@
 
 
 #import <AppKit/AppKit.h>
+#import <OpenGL/gl.h>
 
 #import "STdsWindow.hpp"
 #import "STdsApplication.hpp"
@@ -142,7 +143,7 @@ NSUInteger translateToPlatformFlag(uint16_st stFlag)
 
 ////////////////////////////////////////////
 //Main View
-@interface STContentView : NSView
+@interface STContentView : NSOpenGLView
 {
     NS_STDS Window* _stWindow;
 }
@@ -155,16 +156,13 @@ NSUInteger translateToPlatformFlag(uint16_st stFlag)
 //initialize
 - (id) initWithSTWindow:(NS_STDS Window*)stWindow
 {
-    _stWindow = stWindow;
     return [self init];
 }
-//draw
 
 //mouse event commen function
-
 void fireStMouseEvent(NS_STDS Window* window, NSEvent *event, int8_st buttonType, int8_st state)
 {
-    if(!window->_hMouseBordEvent)
+    if(!window->_hMouseEvent)
         return;
     
     NSPoint eventLocation = [event locationInWindow];
@@ -172,34 +170,10 @@ void fireStMouseEvent(NS_STDS Window* window, NSEvent *event, int8_st buttonType
     
     uint16_st stFlag = translateToSTFlag([event modifierFlags] & NSEventModifierFlagDeviceIndependentFlagsMask);
     
-    window->_hMouseBordEvent(stPoint, buttonType, state, stFlag);
+    window->_hMouseEvent(stPoint, buttonType, state, stFlag);
 }
 
-//mouse event
-- (void)mouseMoved:(NSEvent *)event
-{
-    if(!_stWindow->_hMouseBordEvent)
-        return;
-    
-    NSPoint eventLocation = [event locationInWindow];
-    NS_STCC Point2D stPoint = { eventLocation.x, eventLocation.y };
-    
-    if(_stWindow->_windowConfig._receiveEventOnlyInWindow)
-    {
-        NSRect windowRect = [_stWindow->wom._window frame];
-        NS_STCC Rect stRect = {windowRect.origin.x,
-            windowRect.origin.y, windowRect.size.width, windowRect.size.height};
-        
-        if(! NS_STCC IfPointInRect(stPoint, stRect))
-            return;
-    }
-    
-    uint16_st stFlag = translateToSTFlag([event modifierFlags] & NSEventModifierFlagDeviceIndependentFlagsMask);
-    
-    //mouse moved is commen for all button, so the type if unknow.
-    _stWindow->_hMouseBordEvent(stPoint, ST_MOUSE_BUTTON_UNKNOW,
-                                NS_STDS STMousePressMove, stFlag);
-}
+//Mouse Clicks and Movements
 - (void)mouseDown:(NSEvent *)event
 {
     fireStMouseEvent(_stWindow, event, ST_MOUSE_BUTTON_LEFT,
@@ -252,6 +226,52 @@ void fireStMouseEvent(NS_STDS Window* window, NSEvent *event, int8_st buttonType
 {
     fireStMouseEvent(_stWindow, event, translateToSTMouse([event buttonNumber]),
                      NS_STDS STMousePressDrag);
+}
+//Mouse Tracking
+- (void)updateTrackingAreas
+{
+//    NSLog(@"updateTrackingAreas");
+}
+
+- (void)mouseEntered:(NSEvent *)event
+{
+//    NSLog(@"mouseEntered");
+}
+
+-(void)mouseMoved:(NSEvent *)event
+{
+    if(!_stWindow->_hMouseEvent)
+        return;
+    
+    NSPoint eventLocation = [event locationInWindow];
+    NS_STCC Point2D stPoint = { eventLocation.x, eventLocation.y };
+    
+    if(_stWindow->_windowConfig._receiveEventOnlyInWindow)
+    {
+        NSRect windowRect = [_stWindow->wom._window frame];
+        NS_STCC Rect stRect = {windowRect.origin.x,
+            windowRect.origin.y, windowRect.size.width, windowRect.size.height};
+        
+        if(! NS_STCC IfPointInRect(stPoint, stRect))
+            return;
+    }
+    
+    uint16_st stFlag = translateToSTFlag([event modifierFlags] & NSEventModifierFlagDeviceIndependentFlagsMask);
+    
+    //mouse moved is commen for all button, so the type if unknow.
+    _stWindow->_hMouseEvent(stPoint, ST_MOUSE_BUTTON_UNKNOW,
+                                NS_STDS STMousePressMove, stFlag);
+}
+
+- (void)mouseExited:(NSEvent *)event
+{
+    NSLog(@"mouseExited");
+}
+
+//Mouse Cursor
+- (void)cursorUpdate:(NSEvent *)event
+{
+    [[NSCursor crosshairCursor] set];
 }
 
 - (nullable NSView *)hitTest:(NSPoint)point

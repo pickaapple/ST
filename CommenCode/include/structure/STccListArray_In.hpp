@@ -202,12 +202,14 @@ ListArray<E>::ListArray(const e_t es[], size_t length, size_t capacity)
 template <class E /*Element*/>
 ListArray<E>::ListArray(size_t capacity)
 :_capacity(capacity)
+,_length(0)
 ,_data(nullptr){
     Initialize(capacity);
 }
 template <class E /*Element*/>
 ListArray<E>::ListArray()
 :_capacity(10)
+,_length(0)
 , _data(nullptr) {
     Initialize(_capacity);
 }

@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <unistd.h>
+#include <OpenGL/gl.h>
 
 #include "STdsWindow.hpp"
 
@@ -15,7 +16,7 @@
 void OnKeyboardEvent(uint16_st key, uint16_st modifierFlag, int8_st state)
 {
     std::cout<<"key:"<<key<<" modifier:"<< modifierFlag <<" state:"<<(int)state<<std::endl;
-};
+}
 
 void OnMouseEvent(NS_STCC Point2D point, int8_st buttonType, int8_st state, uint16_st modifierFlag)
 {
@@ -36,14 +37,30 @@ void OnMouseEvent(NS_STCC Point2D point, int8_st buttonType, int8_st state, uint
         default:
             break;
     }
-};
+}
+
+void display()
+{
+    glClearColor(0, 0, 0, 0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(1.0f, 0.85f, 0.35f);
+    glBegin(GL_QUADS);
+    {
+        glVertex3f(  -1,  -1, 0.0);
+        glVertex3f(  1,  -1, 0.0);
+        glVertex3f(  1,  1, 0.0);
+        glVertex3f(  -1,  1, 0.0);
+    }
+    glEnd();
+    glFlush();
+}
 
 int main(int argc, const char * argv[]) {
     std::cout<<"hello world"<<std::endl;
     NS_STDS Window window(100,100,0,0,"hello ds");
 
     //window config
-    window._windowConfig._acceptMouseMoveEvent = true;
+    window._windowConfig._acceptMouseMoveEvent = false;
     window._windowConfig._receiveEventOnlyInWindow = true;
     
     //input event
@@ -57,6 +74,7 @@ int main(int argc, const char * argv[]) {
     
     while(window.IsRuning())
     {
+        display();
         window.PollEvents();
         usleep(500);
     }

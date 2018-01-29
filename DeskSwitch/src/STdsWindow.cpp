@@ -36,11 +36,13 @@ NS_STDS Window::Window(uint16_st width,uint16_st height,uint16_st orignX,uint16_
 ,_orignY(orignY)
 ,_title(title)
 ,_runing(true)
+,_delegate(nullptr)
 {
 }
 
 NS_STDS Window::Window()
 :_runing(true)
+,_delegate(nullptr)
 {
 }
 

@@ -7,9 +7,11 @@
 //
 
 //STGameEngine
+#include "STgeApplication.hpp"
 #include "STgeWindow.hpp"
 //STDeskSwitch
 #include "STdsWindow.hpp"
+
 
 ////////////////////////////////////////
 //Window adapter for STDeskSwitch
@@ -78,7 +80,22 @@ void NS_STGE Window::RunOnce()
     NativeWindowRunOnce(this);
 }
 
-NS_STGE Window::Window()
+NS_STGE Window* NS_STGE Window::Create(NS_STGE Application * app)
+{
+    NS_STGE Window * window = new NS_STGE Window(app);
+    app->RegisterWindow(window);
+    return window;
+}
+
+void NS_STGE Window::Destroy(NS_STGE Window* window)
+{
+    window->_app->LogoutWindow(window);
+    delete window;
+}
+
+NS_STGE Window::Window(NS_STGE Application * app)
+:_delegate(nullptr)
+,_app(app)
 {
 }
 
@@ -87,5 +104,6 @@ NS_STGE Window::~Window()
     #if CONFIG_STGE_USING_STDS
     if(_nativeWindow)
         delete _nativeWindow;
+    _nativeWindow = nullptr;
     #endif
 }

@@ -29,7 +29,7 @@
 #define NS_STGE
 #endif
 
-#define CONFIG_STGE_USING_STDS 1
-#define CONFIG_STGE_USING_GLFW 0
+#define CONFIG_STGE_USING_STDS 0
+#define CONFIG_STGE_USING_GLFW 1
 
 #endif /* STgeMacro_hpp */

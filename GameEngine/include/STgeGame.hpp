@@ -14,14 +14,13 @@
 
 //STGameEngine
 #include "STgeMacro.hpp"
+#include "STgeApplication.hpp"
+#include "STgeWindow.hpp"
 
 #define PI 3.1415926535898f
 
 
 NS_STGE_BEGIN
-
-class Application;
-class Window;
 
 class Game
 {
@@ -42,14 +41,7 @@ public:
     
     uint32_st GetFrameInterval();
     
-    Application& GetAppInfo();
-    
-    ////////////////////
-    //World time
-    ////////////////////
-    uint32_st GetCurrentMillSecond();
-    
-    uint32_st GetApplicationMillSecond();
+    Application& GetApp();
     
     ////////////////////
     //Life circle
@@ -67,11 +59,9 @@ public:
 protected:
     uint32_st         _intervalMS;
     uint32_st         _lastTerminal;
-    uint32_st         _appStartTime;
     
-    Application *     _appInfo;
     Window *          _mainWindow;
-    
+    Application *     _app;
     static Game*      _game;
 };
 

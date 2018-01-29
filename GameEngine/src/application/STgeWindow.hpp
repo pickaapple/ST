@@ -18,13 +18,12 @@
 #if CONFIG_STGE_USING_STDS
 
 #include "STdsWindow.hpp"
-#define NATIVE_WINDOW public: \
-STds::Window* _nativeWindow;
+#define NATIVE_WINDOW STds::Window* _nativeWindow;
 
+#elif CONFIG_STGE_USING_GLFW
+#define NATIVE_WINDOW 
 #else
-
-#error dont adapter other window 
-
+#error dont adapter other window
 #endif
 
 NS_STGE_BEGIN
@@ -36,12 +35,14 @@ class WindowDelegate
 {
 };
 
+class Application;
+
 class Window
 {
-public:
     ////////////////////
     //Attribute
     ////////////////////
+public:
     void Init(uint_st width, uint_st height, uint_st orignX, uint_st orignY, const char* title);
     
     void SetDelegate(WindowDelegate* delegate);
@@ -58,12 +59,19 @@ public:
     //Constructor
     ////////////////////
 public:
-    Window();
+    static Window* Create(NS_STGE Application * _app);
+    
+    static void Destroy(Window* window);
+    
+    Window(NS_STGE Application * app);
     
     virtual ~Window();
     
 protected:
-    WindowDelegate* _delegate;
+    WindowDelegate*         _delegate;
+    NS_STGE Application*    _app;
+
+public:
     NATIVE_WINDOW;
 };
 

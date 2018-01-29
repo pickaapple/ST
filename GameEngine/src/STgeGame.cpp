@@ -13,18 +13,9 @@
 #include "STdsTime.hpp"
 //STGameEngine
 #include "STgeGame.hpp"
-#include "STgeWindow.hpp"
-#include "STgeApplication.hpp"
 
-
-//Main Window
-static NS_STGE Window     s_mainWindow;
-
-//Application
-static NS_STGE Application s_app;
-//Time
-static NS_STDS Time   s_worldTime;
-
+//Init value
+NS_STGE Game* NS_STGE Game::_game = nullptr;
 
 //Attribute
 void NS_STGE Game::SetFrameInterval(int interval)
@@ -37,20 +28,9 @@ uint32_st NS_STGE Game::GetFrameInterval()
     return _intervalMS;
 }
 
-NS_STGE Application& NS_STGE Game::GetAppInfo()
+NS_STGE Application& NS_STGE Game::GetApp()
 {
-    return s_app;
-}
-
-//World time
-uint32_st NS_STGE Game::GetCurrentMillSecond()
-{
-    return s_worldTime.GetCurrentMillSecond();
-}
-
-uint32_st NS_STGE Game::GetApplicationMillSecond()
-{
-    return GetCurrentMillSecond() - _appStartTime;
+    return *_app;
 }
 
 //Life circle
@@ -59,14 +39,14 @@ void NS_STGE Game::Run()
     int32_st  sleepTime;
     uint32_st lastTime,nowTime;
     
-    _appStartTime = lastTime = nowTime = s_worldTime.GetCurrentMillSecond();
+    lastTime = nowTime = _app->GetCurrentMillSecond();
     
-    while(s_mainWindow.IsRunning())
+    while(_mainWindow->IsRunning())
     {
-        s_mainWindow.RunOnce();
+        _mainWindow->RunOnce();
         
         //frame time control
-        nowTime = s_worldTime.GetCurrentMillSecond();
+        nowTime = _app->GetCurrentMillSecond();
         
         _lastTerminal = nowTime - lastTime;
         sleepTime = _lastTerminal - _intervalMS;
@@ -89,13 +69,17 @@ NS_STGE Game::Game(const Config& config)
     :_intervalMS(300)
 {
     ASSERT(!_game);
+    _game = this;
+    _app = &Application::Singleton();
     //Window init
-    s_mainWindow.Init(config._windowWidth, config._windowHeight,
+    _mainWindow = NS_STGE Window::Create(_app);
+    _mainWindow->Init(config._windowWidth, config._windowHeight,
                       config._windowOrignX, config._windowOrignY,
                       config._windowTitle);
-    _game = this;
 }
 
 NS_STGE Game::~Game()
 {
+    NS_STGE Window::Destroy(_mainWindow);
+    _mainWindow = nullptr;
 }
