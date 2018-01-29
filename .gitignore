@@ -1,5 +1,6 @@
 /*
 .DS_Store
+/Build/DerivedData/*
 !.gitignore
 !/Build
 !/CommenCode
